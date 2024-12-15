@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.page {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') center/cover no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+.big-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.category-button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #6c757d;
+    color: white;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-image {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.result-image {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#progress {
+    font-size: 18px;
+    margin-bottom: 20px;
+}

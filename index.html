@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Selection Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Initial Page: Play Button -->
+    <div id="start-page" class="page">
+        <div class="overlay">
+            <button id="play-button" class="big-button">Play</button>
+        </div>
+    </div>
+
+    <!-- Category Selection Page -->
+    <div id="category-page" class="page hidden">
+        <h1 class="title">Choose a Category</h1>
+        <div class="categories">
+            <button id="boys-button" class="category-button">Boys</button>
+            <button id="girls-button" class="category-button">Girls</button>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="page hidden">
+        <div id="progress">Level: 1/10</div>
+        <div class="image-container">
+            <img id="image1" src="" alt="Option 1" class="game-image">
+            <img id="image2" src="" alt="Option 2" class="game-image">
+        </div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="result-page" class="page hidden">
+        <h2>You chose:</h2>
+        <img id="final-choice" src="" alt="Final Choice" class="result-image">
+        <p id="instagram-link">Here is their Instagram: <a id="insta-link" href="" target="_blank">Click here</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
